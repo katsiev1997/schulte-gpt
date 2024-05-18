@@ -33,7 +33,7 @@ const SchulteTable: React.FC = () => {
   const [clickedCells, setClickedCells] = useState<{ [key: number]: string }>({});
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
+    let timer: number;
     if (timerRunning) {
       // Запускаем таймер, который обновляет время каждую секунду
       timer = setInterval(() => setTime((prevTime) => prevTime + 1), 1000);
