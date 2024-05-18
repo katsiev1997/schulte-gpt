@@ -1,0 +1,77 @@
+/* src/SchulteTable.css */
+/* Стили для контейнера таблицы */
+.table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+/* Стили для ячеек таблицы */
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none; /* Запрещает выделение текста */
+  transition: border-color 0.3s ease;
+}
+
+.cell.correct {
+  border-color: #28a745;
+}
+
+.cell.incorrect {
+  border-color: #dc3545;
+}
+
+/* Стили для таймера и искомого числа */
+.timer, .current-number {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Стили для кнопки рестарта */
+.restart-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для лучших результатов */
+.best-scores {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.best-scores h2 {
+  margin-bottom: 10px;
+}
+
+.best-scores ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.best-scores li {
+  font-size: 16px;
+}
